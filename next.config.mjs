@@ -1,10 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    output: "export",
+// next.config.mjs
+export default {
     reactStrictMode: true,
-    images: {
-        unoptimized: true,
-    },
-};
-
-module.exports = nextConfig;
+    // Add your custom configurations here
+  }
+  
