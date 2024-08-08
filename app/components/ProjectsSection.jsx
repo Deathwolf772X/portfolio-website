@@ -7,12 +7,12 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Pending Project",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
+    title: "Marvel Quiz",
+    description: "A simple MCU Quiz developed using React & TailwindCSS. A lot of focus was put towards the Settings Bar",
+    image: "/images/projects/1.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Deathwolf772X/marvel-quiz",
+    previewUrl: "https://marvel-quiz-psi.vercel.app/",
   },
   {
     id: 2,

@@ -5,14 +5,12 @@ import Link from "next/link";
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
   return (
     <div className="relative group">
-      <div
-        className="h-52 md:h-72 rounded-t-xl relative"
-        style={{
-          background: `url(${imgUrl})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="h-52 md:h-72 rounded-t-xl relative overflow-hidden">
+        <img
+          src={imgUrl}
+          alt={title}
+          className="w-full h-full object-cover object-center"
+        />
         <div className="absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-500 flex items-center justify-center">
           <Link
             href={gitUrl}
